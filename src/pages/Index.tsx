@@ -7,6 +7,7 @@ import Demo from "@/components/Demo";
 import Architecture from "@/components/Architecture";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
+import ODECalculator from "@/components/ODECalculator";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <WhyPython />
       <CoreLibraries />
       <Material />
+      <ODECalculator />
       <Demo />
       <Architecture />
       <Footer />
