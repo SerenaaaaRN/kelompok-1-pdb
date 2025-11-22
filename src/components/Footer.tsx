@@ -10,7 +10,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-gradient mb-4">∫ Kalkulus Solver</h3>
             <p className="text-foreground/70 text-sm leading-relaxed">
               Python-based differential equation solver dengan visualisasi interaktif.
-              Project Kalkulus 2024.
+              Project Kalkulus 2025 by kel 1.
             </p>
           </div>
 
@@ -63,10 +63,10 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/50 text-center">
           <p className="text-foreground/60 text-sm flex items-center justify-center gap-2">
-            Made with <Heart className="w-4 h-4 text-secondary fill-secondary" /> using Python, SymPy, Matplotlib & Tkinter
+            Made with Python, NumPy, SymPy, Matplotlib & Tkinter
           </p>
           <p className="text-foreground/50 text-xs mt-2">
-            © 2024 Kalkulus Solver. Presentation Project.
+            © 2025 Kalkulus Solver. Presentation Project.
           </p>
         </div>
       </div>

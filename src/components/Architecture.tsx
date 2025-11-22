@@ -87,18 +87,6 @@ const Architecture = () => {
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-12 glass-card rounded-2xl p-8 max-w-4xl mx-auto"
-        >
-          <h3 className="text-2xl font-bold mb-4 text-center">Design Pattern</h3>
-          <p className="text-foreground/70 text-center leading-relaxed">
-            Menggunakan <span className="text-primary font-semibold">MVC (Model-View-Controller)</span> pattern
-            untuk separation of concerns yang jelas antara logic, presentation, dan data flow.
-          </p>
-        </motion.div>
       </div>
     </section>
   );

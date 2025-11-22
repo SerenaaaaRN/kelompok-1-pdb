@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Play, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ScreenApp from "./assets/SSAplikasi.png";
 
 const Demo = () => {
   const ref = useRef(null);
@@ -11,9 +12,9 @@ const Demo = () => {
   const features = [
     "Input persamaan diferensial dengan syntax natural",
     "Solusi simbolik otomatis menggunakan SymPy",
+    "Step-by-step solution breakdown",
     "Visualisasi grafik interaktif real-time",
     "Export hasil ke berbagai format",
-    "Step-by-step solution breakdown",
   ];
 
   return (
@@ -45,12 +46,9 @@ const Demo = () => {
             className="glass-card glass-card-hover rounded-3xl p-4 aspect-video flex items-center justify-center relative overflow-hidden group"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20"></div>
-            <Button
-              size="lg"
-              className="relative z-10 w-20 h-20 rounded-full neon-glow bg-primary hover:bg-primary/90"
-            >
-              <Play className="w-10 h-10 ml-1" />
-            </Button>
+              <img src={ScreenApp}
+              alt="Demo Image"
+              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-300"/>
             <div className="absolute inset-0 flex items-center justify-center text-6xl font-bold text-foreground/5">
               DEMO
             </div>

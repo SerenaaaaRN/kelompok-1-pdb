@@ -93,7 +93,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-foreground/70 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
             Aplikasi berbasis Python untuk menyelesaikan persamaan diferensial linear ordo 1
-            dengan visualisasi interaktif menggunakan library python seperti SymPy, Matplotlib, dan Tkinter.
+            dengan visualisasi interaktif menggunakan library python s SymPy, Matplotlib, dan Tkinter.
           </motion.p>
 
           <motion.div

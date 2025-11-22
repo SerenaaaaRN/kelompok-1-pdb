@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import rillahPhoto from "./assets/rillah.jpg";
 import dheaPhoto from "./assets/dhea.jpg";
+import aditPhoto from "./assets/adit.jpg";
 
 const Team = () => {
   const ref = useRef(null);
@@ -15,6 +16,7 @@ const Team = () => {
       role: "Pemateri",
       initials: "TM1",
       color: "from-purple-500 to-purple-600",
+      photo: aditPhoto,
     },
     {
       name: "Dhea Aurellia",
@@ -82,7 +84,7 @@ const Team = () => {
                 </div>
                 )}
               </div>
-              
+
               <h3 className="text-xl font-bold mb-2">{member.name}</h3>
               <p className="text-foreground/60 text-sm mb-6">{member.role}</p>
               <div className="flex items-center justify-center gap-3">

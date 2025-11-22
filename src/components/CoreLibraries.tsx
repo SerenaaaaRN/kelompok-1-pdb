@@ -9,24 +9,22 @@ const CoreLibraries = () => {
 
   const libraries = [
     {
-      icon: FunctionSquare,
+      image: "https://www.sympy.org/static/images/logo.png",
       name: "SymPy",
       description: "Symbolic mathematics library untuk menyelesaikan persamaan diferensial secara simbolik.",
-      color: "from-purple-500 to-pink-500",
     },
     {
-      icon: BarChart3,
+      image: "https://icon.icepanel.io/Technology/svg/Matplotlib.svg",
       name: "Matplotlib",
       description: "Powerful plotting library untuk visualisasi grafik solusi persamaan diferensial.",
-      color: "from-blue-500 to-cyan-500",
     },
     {
-      icon: Layout,
+      image: "https://icon.icepanel.io/Technology/svg/Python.svg",
       name: "Tkinter",
       description: "GUI framework bawaan Python untuk membuat interface desktop yang user-friendly.",
-      color: "from-orange-500 to-red-500",
     },
   ];
+
 
   return (
     <section id="libraries" className="py-24 relative overflow-hidden">
@@ -45,13 +43,12 @@ const CoreLibraries = () => {
             <span className="text-gradient">Core Libraries</span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Technology stack yang powerful untuk mathematical computing
+            Technology stack yang powerful untuk komputasi matematika
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {libraries.map((library, index) => {
-            const Icon = library.icon;
             return (
               <motion.div
                 key={index}
@@ -61,9 +58,11 @@ const CoreLibraries = () => {
                 className="glass-card glass-card-hover rounded-2xl p-8 text-center"
               >
                 <div className="mb-6 flex justify-center">
-                  <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${library.color} flex items-center justify-center transform rotate-6 hover:rotate-0 transition-transform duration-300`}>
-                    <Icon className="w-10 h-10 text-white" />
-                  </div>
+                  <img
+                    src={library.image}
+                    alt={library.name}
+                    className="w-20 h-20 object-contain rounded-xl bg-muted/30 p-2"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{library.name}</h3>
                 <p className="text-foreground/70 leading-relaxed">{library.description}</p>

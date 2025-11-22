@@ -12,13 +12,13 @@ const WhyPython = () => {
       icon: Code2,
       title: "Simple & Readable",
       description:
-        "Python syntax yang clean dan mudah dipahami membuat development lebih cepat dan maintenance lebih mudah. Perfect untuk mathematical computing.",
+        "Syntax di python mudah dipahami membuat develop lebih cepat dan maintenance nya lebih muda. Perfact untuk perhitungan matematika.",
     },
     {
       icon: Zap,
       title: "Powerful Libraries",
       description:
-        "Ekosistem library scientific computing yang mature seperti SymPy, NumPy, dan Matplotlib membuat Python ideal untuk aplikasi matematika.",
+        "Ekosistem library scientific computing yang keren seperti SymPy, NumPy, dan Matplotlib membuat Python ideal untuk aplikasi perhitungan matematika.",
     },
   ];
 
@@ -39,7 +39,7 @@ const WhyPython = () => {
             <span className="text-gradient">Why Python?</span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Python adalah pilihan sempurna untuk mathematical computing
+            Python adalah pilihan sempurna untuk komputasi matematika
           </p>
         </motion.div>
 
