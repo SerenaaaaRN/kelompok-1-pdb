@@ -14,12 +14,13 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "#hero" },
+    { name: "Team", href: "#team" },
     { name: "Why Python", href: "#why" },
     { name: "Libraries", href: "#libraries" },
     { name: "Material", href: "#material" },
     { name: "Demo", href: "#demo" },
     { name: "Architecture", href: "#architecture" },
-    { name: "Team", href: "#team" },
+    
   ];
 
   return (
@@ -43,7 +44,7 @@ const Navbar = () => {
               transition={{ delay: 0.2 }}
               className="flex items-center space-x-2"
             >
-              <span className="text-2xl font-bold text-gradient">∫ Kalkulus Solver</span>
+              <span className="text-2xl font-bold text-gradient">∫ Persamaan Diferensial Linear Ordo 1</span>
             </motion.div>
 
             <div className="hidden md:flex items-center space-x-1">

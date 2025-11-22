@@ -13,12 +13,12 @@ const Index = () => {
     <div className="gradient-bg min-h-screen">
       <Navbar />
       <Hero />
+      <Team />
       <WhyPython />
       <CoreLibraries />
       <Material />
       <Demo />
       <Architecture />
-      <Team />
       <Footer />
     </div>
   );

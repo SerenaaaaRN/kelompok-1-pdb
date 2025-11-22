@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
+import rillahPhoto from "./assets/rillah.jpg";
+import dheaPhoto from "./assets/dhea.jpg";
 
 const Team = () => {
   const ref = useRef(null);
@@ -9,26 +11,28 @@ const Team = () => {
 
   const members = [
     {
-      name: "Team Member 1",
-      role: "Lead Developer",
+      name: "Aditiah Okta Romadhon",
+      role: "Pemateri",
       initials: "TM1",
       color: "from-purple-500 to-purple-600",
     },
     {
-      name: "Team Member 2",
-      role: "UI/UX Designer",
+      name: "Dhea Aurellia",
+      role: "Pemateri",
       initials: "TM2",
       color: "from-pink-500 to-pink-600",
+      photo: dheaPhoto,
     },
     {
-      name: "Team Member 3",
-      role: "Algorithm Specialist",
+      name: "Duhairillah",
+      role: "Moderator dan Pemateri",
       initials: "TM3",
       color: "from-blue-500 to-blue-600",
+      photo: rillahPhoto,
     },
     {
-      name: "Team Member 4",
-      role: "Documentation Lead",
+      name: "Shafin Maulana",
+      role: "Pemateri",
       initials: "TM4",
       color: "from-cyan-500 to-cyan-600",
     },
@@ -65,10 +69,20 @@ const Team = () => {
               className="glass-card glass-card-hover rounded-2xl p-6 text-center"
             >
               <div className="mb-6 flex justify-center">
-                <div className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${member.color} flex items-center justify-center text-3xl font-bold text-white`}>
-                  {member.initials}
+                {member.photo ? (
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-24 h-24 rounded-2xl object-cover shadow-lg"
+                  />
+                ) : (
+                <div
+                  className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${member.color} flex items-center justify-center text-3xl font-bold text-white`}>
+                    {member.initials}
                 </div>
+                )}
               </div>
+              
               <h3 className="text-xl font-bold mb-2">{member.name}</h3>
               <p className="text-foreground/60 text-sm mb-6">{member.role}</p>
               <div className="flex items-center justify-center gap-3">
