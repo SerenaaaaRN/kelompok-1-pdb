@@ -19,9 +19,9 @@ const CoreLibraries = () => {
       description: "Powerful plotting library untuk visualisasi grafik solusi persamaan diferensial.",
     },
     {
-      image: "https://icon.icepanel.io/Technology/svg/Python.svg",
-      name: "Tkinter",
-      description: "GUI framework bawaan Python untuk membuat interface desktop yang user-friendly.",
+      image: "https://icon.icepanel.io/Technology/svg/NumPy.svg",
+      name: "NumPy",
+      description: "Salah satu library Python yang berfungsi untuk proses komputasi numerik.",
     },
   ];
 

@@ -6,6 +6,7 @@ import rillahPhoto from "./assets/rillah.jpg";
 import dheaPhoto from "./assets/dhea.jpg";
 import aditPhoto from "./assets/adit.jpg";
 import rillah from "./assets/rillahalmet1.jpg";
+import shafin from "./assets/shafin.jpg";
 
 const Team = () => {
   const ref = useRef(null);
@@ -38,6 +39,7 @@ const Team = () => {
       role: "Pemateri",
       initials: "TM4",
       color: "from-cyan-500 to-cyan-600",
+      photo: shafin,
     },
   ];
 
