@@ -69,7 +69,7 @@ export class ODEApiClient {
 
   async healthCheck(): Promise<boolean> {
     try {
-      const response = await fetch(`${this.baseUrl}/health`);
+      const response = await fetch(`${this.baseUrl}/api/health`);
       return response.ok;
     } catch {
       return false;

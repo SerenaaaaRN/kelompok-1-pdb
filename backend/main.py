@@ -149,12 +149,12 @@ def solve_ode_sympy(P_str: str, Q_str: str, x0: Optional[float], y0: Optional[fl
         raise HTTPException(status_code=400, detail=f"Error solving ODE: {str(e)}")
 
 
-@app.get("/")
+@app.get("/api")
 async def root():
     return {"message": "ODE Solver API is running", "version": "1.0.0"}
 
 
-@app.get("/health")
+@app.get("/api/health")
 async def health():
     return {"status": "healthy"}
 
