@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import WhyPython from "@/components/WhyPython";
 import CoreLibraries from "@/components/CoreLibraries";
 import Material from "@/components/Material";
 import Demo from "@/components/Demo";
@@ -8,6 +7,7 @@ import Architecture from "@/components/Architecture";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 import ODECalculator from "@/components/ODECalculator";
+import WhyReact from "@/components/WhyReact";
 
 const Index = () => {
   return (
@@ -15,12 +15,12 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Team />
-      <WhyPython />
+      <WhyReact />
       <CoreLibraries />
       <Material />
+      <Demo/>
       <ODECalculator />
-      <Demo />
-      <Architecture />
+      <Architecture/>
       <Footer />
     </div>
   );
