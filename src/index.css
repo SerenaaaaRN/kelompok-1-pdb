@@ -104,19 +104,19 @@ All colors MUST be HSL.
 @keyframes math-float {
   0%, 100% {
     transform: translate(0, 0) rotate(0deg);
-    opacity: 0.1;
+    opacity: 9;
   }
   25% {
     transform: translate(10px, -10px) rotate(5deg);
-    opacity: 0.15;
+    opacity: 9;
   }
   50% {
     transform: translate(-5px, -20px) rotate(-3deg);
-    opacity: 0.1;
+    opacity: 9;
   }
   75% {
     transform: translate(-10px, -10px) rotate(3deg);
-    opacity: 0.12;
+    opacity: 9;
   }
 }
 

@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import rillahPhoto from "./assets/rillah.jpg";
 import dheaPhoto from "./assets/dhea.jpg";
 import aditPhoto from "./assets/adit.jpg";
+import rillah from "./assets/rillahalmet1.jpg";
 
 const Team = () => {
   const ref = useRef(null);
@@ -30,7 +31,7 @@ const Team = () => {
       role: "Moderator dan Pemateri",
       initials: "TM3",
       color: "from-blue-500 to-blue-600",
-      photo: rillahPhoto,
+      photo: rillah,
     },
     {
       name: "Shafin Maulana",
