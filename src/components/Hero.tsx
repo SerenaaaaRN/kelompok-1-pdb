@@ -3,16 +3,18 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const phrases = [
+    "Solve Differential Equations",
+    "Visualize Mathematical Solutions",
+    "Learn Calculus Interactively",
+  ];
+  
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const phrases = [
-    "Solve Differential Equations",
-    "Visualize Mathematical Solutions",
-    "Learn Calculus Interactively",
-  ];
+  
 
   useEffect(() => {
     const currentPhrase = phrases[currentIndex];
@@ -101,7 +103,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.1, duration: 0.5, type: "spring", bounce: 0.5 }}
           >
-            <a href="https://colab.research.google.com/drive/1RBkNW5SsR2IIr2XQ2eF-SsE4sUma0jgo">
+            <a href="#calculator">
               <Button
               size="lg"
               className="neon-glow text-lg px-8 py-6 rounded-xl font-semibold bg-primary hover:bg-primary/90 group"

@@ -14,8 +14,8 @@ const ODECalculator = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const [input, setInput] = useState<ODEApiRequest>({
-    P: "1",
-    Q: "exp(x)",
+    P: "",
+    Q: "",
     x0: undefined,
     y0: undefined,
     x_min: -5,
@@ -94,7 +94,7 @@ const ODECalculator = () => {
                 id="P"
                 value={input.P}
                 onChange={(e) => setInput({ ...input, P: e.target.value })}
-                placeholder="Contoh: 2*x atau 1/x"
+                placeholder="Contoh: 1/x"
                 className="bg-muted/30 border-border/50 text-lg"
               />
             </div>
